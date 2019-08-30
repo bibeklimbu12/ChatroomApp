@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessagesActivity">
+    <Button
+        android:id="@+id/send_message_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="Send" />
+    <EditText
+        android:id="@+id/input_message"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/send_message_btn"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="3dp"
+        android:layout_toStartOf="@+id/send_message_btn"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/please_type_a_message_here"
+        android:inputType="textMultiLine"/>
+    <ScrollView
+        android:layout_width="401dp"
+        android:layout_height="628dp">
+
+        <TextView
+            android:id="@+id/display_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/upload_btn"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:text="+" />
+
+</RelativeLayout>
